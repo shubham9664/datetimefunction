@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --txtColor: #00bbf9;
+}
+.txtColor{
+    color: var(--txtColor);
+    font-weight: bold;
+}
+.navbar{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+.navbar-nav .nav-item .nav-link{
+    color: #fff !important;
+    font-weight: 500;
+}
+.navbar-nav .nav-item .nav-link.active{
+    border-bottom: 1px solid #fff;
+}
+.bgColor{
+    background-color: var(--txtColor);
+}
+a{
+    text-decoration: none;
+}
+p{
+    text-align: justify;
+}
+
+.text-box{
+    background-color: #415a77;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-box p{
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+.hero img{
+    height: 70vh;
+    width: 100%;
+}
+
+
+.hexagon {
+    width: 132px;
+    height: 100px;
+    background: #32557f;
+    margin: 0px auto;
+    position: relative;
+}
+.hexagon span{
+    font-size: 14px;
+    color: #fff;
+}
+.hexagon ::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 68px solid transparent;
+    border-right: 64px solid transparent;
+    border-bottom: 25px solid #32557f;
+}
+
+.hexagon ::after {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 65px solid transparent;
+    border-right: 67px solid transparent;
+    border-top: 25px solid #32557f;
+}
+.row_box{
+    background-color: #fffffc;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px gray;
+}
+.footer{
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+}
