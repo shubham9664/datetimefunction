@@ -43,6 +43,16 @@
         //  date_create
         $date = date_create("2023-03-15 22:25:00", timezone_open("Asia/kolkata"));
         echo date_format($date, "d/m/Y H:i:s");
+        
+        echo checkdate(2,29,1999);
+        $date1 = date_create("1999-06-14");
+        $date2 = date_create("2000-09-20");
+         
+        $diffrent = date_diff($date1, $date2);
+        echo  $diffrent->days;
+        echo '<pre>';
+        print_r($diffrent);
+      
 
         ?>
     </div>
