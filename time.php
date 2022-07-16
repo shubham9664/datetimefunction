@@ -34,7 +34,16 @@
         echo 'this is totle for time '. date('d-m-Y h:i:sa e') . '<br>';
         echo  date_default_timezone_set('Asia/Kolkata');
         echo 'this is totle for time '. date('d-m-Y h:i:sa e') . '<br>';
-       
+
+        // maketime date
+        echo 'Time & Date'. date('d-m-Y h:i:sa e') . '<br>';
+        echo date("l", mktime(0,0,0,6, 14, 1999));
+        echo date(" d-m-Y ", mktime(0,0,0,6, 14, 1999));
+        
+        //  date_create
+        $date = date_create("2023-03-15 22:25:00", timezone_open("Asia/kolkata"));
+        echo date_format($date, "d/m/Y H:i:s");
+
         ?>
     </div>
 </body>
